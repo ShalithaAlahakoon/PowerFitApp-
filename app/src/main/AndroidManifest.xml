@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PowerFit">
-        <activity android:name=".AddMember"></activity>
+        <activity android:name=".MemberDetails" />
+        <activity android:name=".AddMember" />
         <activity
             android:name=".MemberPage"
             android:label="@string/title_activity_member_page"

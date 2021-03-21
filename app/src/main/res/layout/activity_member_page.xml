@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wp2504211" />
+        app:srcCompat="@drawable/wp2504211"
+        android:contentDescription="@string/todo7" />
 
 
     <TextView
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Members"
+        android:text="@string/members"
         android:textColor="#FFF7F7"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +40,7 @@
         android:id="@+id/textView2"
         android:layout_width="152dp"
         android:layout_height="128dp"
-        android:text="53"
+        android:text="@string/_53"
         android:textAlignment="center"
         android:textColor="#FFF7F7"
         android:textSize="100sp"
@@ -60,7 +61,7 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="@android:color/holo_blue_bright"
         android:onClick="AddMembers"
-        android:text="+"
+        android:text="@string/btnAddMember"
         android:textColor="#040404"
         android:textSize="40sp"
         app:cornerRadius="5000dp"
@@ -91,7 +92,7 @@
                 android:background="#0CE1E8"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="ID"
+                android:text="@string/id"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -102,7 +103,7 @@
                 android:background="#FFFFFF"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="Name"
+                android:text="@string/name"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -113,7 +114,7 @@
                 android:background="#FFFFFF"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View"
+                android:text="@string/view"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -123,34 +124,35 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0001"
+                android:text="@string/lblIDm0001"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Ada lovelace"
+                android:text="@string/shalitha_alahakoon"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:onClick="MembersDetails"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
         </TableRow>
@@ -159,34 +161,34 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0002"
+                android:text="@string/m0002"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Harry Potter"
+                android:text="@string/harry_potter"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
         </TableRow>
@@ -194,34 +196,34 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0003"
+                android:text="@string/m0003"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Michale Jackson"
+                android:text="@string/michale_jackson"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
         </TableRow>
@@ -229,34 +231,34 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0004"
+                android:text="@string/m0004"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="David Peris"
+                android:text="@string/david_peris"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
         </TableRow>
@@ -264,34 +266,34 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0005"
+                android:text="@string/m0005"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Robinson Cruso"
+                android:text="@string/robinson_cruso"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
 
@@ -300,34 +302,34 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name">
+            android:text="@string/name">
 
             <TextView
-                android:id="@+id/M0004"
+                android:id="@+id/m0002"
                 android:layout_width="32dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="M0006"
+                android:text="@string/m0006"
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Michale Jackson"
+                android:text="@string/michale_jackson"
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnVd1"
                 android:layout_width="135dp"
                 android:layout_height="34dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="View Details"
+                android:text="@string/view_details"
                 android:textColor="#0B0A0A"
                 android:textSize="12sp" />
         </TableRow>

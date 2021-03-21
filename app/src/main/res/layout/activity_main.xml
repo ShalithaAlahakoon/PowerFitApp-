@@ -14,7 +14,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BMI"
+        android:text="@string/lblbmi"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Schedules"
+        android:text="@string/lblschedules"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,8 @@
         app:layout_constraintStart_toEndOf="@+id/imgBtn1"
         app:layout_constraintTop_toTopOf="@+id/imgBtn1"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/dumbbell" />
+        app:srcCompat="@drawable/dumbbell"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/imgBtn1"
@@ -64,13 +65,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMember2"
         app:layout_constraintVertical_bias="0.88"
-        app:srcCompat="@drawable/athlete__1_" />
+        app:srcCompat="@drawable/athlete__1_"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/txtMember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Members"
+        android:text="@string/lblmembers"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +90,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:rotationX="8"
-        android:text="HOME"
+        android:text="@string/lblhome"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="36sp"
@@ -104,7 +106,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Excercises"
+        android:text="@string/lblexcercises"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +127,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMember"
         app:layout_constraintVertical_bias="0.885"
-        app:srcCompat="@drawable/gauge" />
+        app:srcCompat="@drawable/gauge"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -136,6 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton11"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/date_time_preferences" />
+        app:srcCompat="@drawable/date_time_preferences"
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
