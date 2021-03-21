@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public void Members(View view){
         Intent i =new Intent(this,MemberPage.class);
         startActivity(i);
-
-
         Toast.makeText(this, "You just clicked the Member button", Toast.LENGTH_SHORT).show();
 
     }

@@ -22,4 +22,12 @@ public class MemberPage extends AppCompatActivity {
         Toast.makeText(this, "Loading Form...", Toast.LENGTH_SHORT).show();
 
     }
+    public void MembersDetails(View view){
+        Intent i =new Intent(this,MemberDetails.class);
+        startActivity(i);
+
+
+        Toast.makeText(this, "Loading Form...", Toast.LENGTH_SHORT).show();
+
+    }
 }
