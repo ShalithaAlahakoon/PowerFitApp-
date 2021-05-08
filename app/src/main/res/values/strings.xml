@@ -14,6 +14,18 @@
     <string name="btnSave">Save</string>
     <string name="btnBack" />
     <string name="BtnViewEx">View Exercises</string>
+    <string name="viewExId">"Ex_ID"</string>
+    <string name="viewExName">"Ex_NAME"</string>
+    <string name="viewExBodyPart">"Ex_BodyPart"</string>
+    <string name="viewExEq">"Ex_Eq"</string>
+    <string name="viewExDetails">"Ex_Details"</string>
+    <string name="nameExID" >"Exercise ID "</string>
+    <string name="nameExName" >"Exercise Name "</string>
+    <string name="nameExBodyPart" >"Target BodyPart "</string>
+    <string name="nameExEq" >"Equipment "</string>
+    <string name="nameExDetails" >"Special Details "</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
     <string-array name="body_part">
         <item>ABS</item>
         <item>BACK</item>

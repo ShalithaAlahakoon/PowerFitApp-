@@ -61,4 +61,5 @@ public class Exercise {
     public String allExercices(){
         return this.exID + "\n" + "Name : " + exName + "\n" + "Body Part : " + bodyPart;
     }
+
 }
