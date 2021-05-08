@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Power Fit</string>
+    <string name="Exercises">EXERCISES</string>
+    <string name="BtnAddNew">Add New</string>
+    <string name="txtExId">Exercise ID</string>
+    <string name="txtName">Name</string>
+    <string name="txtBodyPart">Body Part</string>
+    <string name="txtEquipment">Equipment</string>
+    <string name="txtDetails">Details</string>
+    <string name="editTxrID">Type here</string>
+    <string name="AddNew">Add new</string>
+    <string name="editTextName">Type here</string>
+    <string name="editTxtDetails">Type here</string>
+    <string name="btnSave">Save</string>
+    <string name="btnBack" />
+    <string name="BtnViewEx">View Exercises</string>
+    <string-array name="body_part">
+        <item>ABS</item>
+        <item>BACK</item>
+        <item>BICEPS</item>
+        <item>CHEST</item>
+        <item>FOREARMS</item>
+        <item>LEGS</item>
+        <item>SHOLDERS</item>
+        <item>TRICEPS</item>
+    </string-array>
+    <string-array name="equipment">
+        <item>Incline Bench</item>
+        <item>Dumbbell</item>
+        <item>Leg Extension</item>
+        <item>Leg curl</item>
+        <item>Barbell</item>
+        <item>Bench</item>
+    </string-array>
+</resources>

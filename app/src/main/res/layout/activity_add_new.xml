@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:visibility="visible"
+    tools:context=".AddNew">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textaddnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddNew"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <TextView
+        android:id="@+id/txtBodyPart"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/txtBodyPart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerBPart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtExId" />
+
+    <Spinner
+        android:id="@+id/spinnerBPart"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/body_part"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtBodyPart"
+        app:layout_constraintTop_toBottomOf="@+id/editTextID" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/txtName"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBodyPart" />
+
+    <TextView
+        android:id="@+id/txtExId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/txtExId"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/editTxrID"
+        android:inputType="textPersonName"
+        android:scrollbarThumbVertical="@color/black"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/light_blue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtExId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtExId" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/editTextName"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/light_blue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtEquipment"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/txtEquipment"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerEquipment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Spinner
+        android:id="@+id/spinnerEquipment"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/equipment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtEquipment"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/txtDetails"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDetails"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEquipment" />
+
+    <EditText
+        android:id="@+id/editTextDetails"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/editTxtDetails"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/light_blue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtDetails" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="insert"
+        android:text="@string/btnSave"
+        app:backgroundTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetails" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="69dp"
+        android:layout_height="53dp"
+        android:onClick="Back"
+        android:text="@string/btnBack"
+        app:backgroundTint="@color/light_blue"
+        app:icon="@drawable/abc_vector_test"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1047250908283",
+    "firebase_url": "https://powerfitex-default-rtdb.firebaseio.com",
+    "project_id": "powerfitex",
+    "storage_bucket": "powerfitex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047250908283:android:1e4a56d88bfb8213129ede",
+        "android_client_info": {
+          "package_name": "com.example.powerfitex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047250908283-9lgr6qp1o5r07mss8cmkujcb26useg81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCad81_TCCpF1ayZp51u96rU2XAk6Iumnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047250908283-9lgr6qp1o5r07mss8cmkujcb26useg81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
