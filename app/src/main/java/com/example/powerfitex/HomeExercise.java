@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class HomeExercise extends AppCompatActivity {
 
@@ -46,11 +49,38 @@ public class HomeExercise extends AppCompatActivity {
             }
         });
         
-        LoadData();
+        LoadData("");
+
+        inputSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.toString()!= null)
+                {
+                    LoadData(s.toString());
+                }
+                else
+                {
+                    LoadData("");
+                }
+
+            }
+        });
     }
 
-    private void LoadData() {
-        options = new FirebaseRecyclerOptions.Builder<Exercise>().setQuery(databaseReference,Exercise.class).build();
+    private void LoadData(String data) {
+        Query query = databaseReference.orderByChild("exName").startAt(data).endAt(data+"\uf8ff");
+
+        options = new FirebaseRecyclerOptions.Builder<Exercise>().setQuery(query,Exercise.class).build();
         adapter = new FirebaseRecyclerAdapter<Exercise, MyViewHolderEx>(options) {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolderEx holder, int position, @NonNull Exercise model) {

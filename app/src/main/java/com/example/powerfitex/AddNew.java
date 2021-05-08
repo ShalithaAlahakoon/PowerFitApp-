@@ -38,7 +38,7 @@ public class AddNew extends AppCompatActivity {
 
     public void Back (View view){
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeExercise.class);
         startActivity(intent);
     }
 
