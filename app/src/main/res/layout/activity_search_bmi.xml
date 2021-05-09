@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmi_13"
+    android:background="@drawable/bmi30"
     tools:context=".searchBmi">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_blue_bright"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,11 @@
         android:layout_marginRight="20dp"
         android:hint="              Enter Member ID"
 
-        android:padding="10dp"></AutoCompleteTextView>
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"></AutoCompleteTextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listData"
@@ -52,10 +56,10 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="67dp"
-        android:layout_marginTop="120dp"
         android:layout_marginLeft="75dp"
+        android:layout_marginTop="120dp"
         android:text="Enter Member ID"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="36sp" />
 
 

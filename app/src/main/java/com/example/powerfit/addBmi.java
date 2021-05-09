@@ -70,15 +70,15 @@ public class addBmi extends AppCompatActivity {
                     else if (TextUtils.isEmpty(Height.getText().toString()))
                         Toast.makeText(getApplicationContext(), "please enter height", Toast.LENGTH_SHORT).show();
                     else {
-                        btd.setMemberId(MemId.getText().toString().trim());
-                        btd.setMonth(Month.getSelectedItem().toString().trim());
-                        btd.setWeight(Float.parseFloat(Weight.getText().toString().trim()));
-                        btd.setHeight(Float.parseFloat(Height.getText().toString().trim()));
-                        btd.setBmi(bmi);
+                                btd.setMemberId(MemId.getText().toString().trim());
+                                btd.setMonth(Month.getSelectedItem().toString().trim());
+                                btd.setWeight(Float.parseFloat(Weight.getText().toString().trim()));
+                                btd.setHeight(Float.parseFloat(Height.getText().toString().trim()));
+                                btd.setBmi(bmi);
 
-                        dbRef.push().setValue(btd);
-                        Toast.makeText(getApplicationContext(), "Insert successful", Toast.LENGTH_SHORT).show();
-                        clearControls();
+                                dbRef.push().setValue(btd);
+                                Toast.makeText(getApplicationContext(), "Insert successful", Toast.LENGTH_SHORT).show();
+                                clearControls();
 
                     }
                 } catch (NumberFormatException e) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmi_img_18"
+    android:background="@drawable/bmi29"
     tools:context=".MainActivity">
 
 
@@ -12,8 +12,8 @@
         android:id="@+id/btnSearch"
         android:layout_width="117dp"
         android:layout_height="65dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="176dp"
         android:background="@android:color/holo_blue_bright"
         android:onClick="Search"
         android:text="@string/btnSearch"
@@ -21,14 +21,14 @@
         android:textSize="24sp"
         app:iconTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="173dp"
         android:layout_height="64dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="352dp"
         android:background="@android:color/holo_blue_bright"
         android:onClick="AddBMID"
         android:text="Add New BMI Details"
@@ -46,32 +46,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:logo="@drawable/menu_24"
-        app:title="Member BMI Details" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="366dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar3"
-        app:srcCompat="@drawable/calcu" />
+        app:title="   BMI Management" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="120dp"
         android:layout_height="53dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/holo_blue_bright"
         android:onClick="viewd"
-        android:text="All Records"
+        android:text="View All Records"
         android:textColorHighlight="@color/black"
         android:textColorLink="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

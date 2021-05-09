@@ -63,9 +63,6 @@ public class viewBmi extends AppCompatActivity {
                         txtweight.setText(ds.child("weight").getValue().toString());
                         txtheight.setText(ds.child("height").getValue().toString());
                         txtbmi.setText(ds.child("bmi").getValue().toString());
-
-
-
                     }
                 }
             }

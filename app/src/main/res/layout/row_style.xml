@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmi_5"
+    android:background="@drawable/bmi27"
     >
     <TextView
         android:id="@+id/memberId"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:textSize="26dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:text="MemberID"
         />
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/memberId"
+        android:textColor="@color/white"
         android:layout_marginLeft="12dp"
         android:textSize="24dp"
         android:text="Month"

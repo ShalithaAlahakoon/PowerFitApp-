@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmi_13"
+    android:background="@drawable/bmi32"
     tools:context=".allview">
 
     <androidx.appcompat.widget.Toolbar
@@ -23,11 +23,11 @@
         android:id="@+id/textView15"
         android:layout_width="208dp"
         android:layout_height="83dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="110dp"
         android:text="All Records"
-        android:textColor="@color/black"
-        android:textSize="36sp" />
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
     <ListView
         android:id="@+id/listData"

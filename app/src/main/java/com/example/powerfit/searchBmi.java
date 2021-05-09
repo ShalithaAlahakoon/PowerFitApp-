@@ -136,23 +136,15 @@ public class searchBmi extends AppCompatActivity {
         private ArrayList<UserInfo> mDataset;
         private Context mContext;
 
-        /**
-         * Provide a reference to the type of views that you are using
-         * (custom ViewHolder).
-         */
         public static class MyViewHolder extends RecyclerView.ViewHolder {
             TextView memberId;
             TextView month;
 
-
             public MyViewHolder(View v) {
                 super(v);
-
-
                 memberId = (TextView) v.findViewById(R.id.memberId);
                 month = (TextView) v.findViewById(R.id.month);
             }
-
         }
 
         public MyAdapter(ArrayList<UserInfo> dataSet, Context mContext) {
@@ -160,17 +152,14 @@ public class searchBmi extends AppCompatActivity {
             this.mContext = mContext;
         }
 
-        // Create new views (invoked by the layout manager)
         @Override
         public MyAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
             LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
             View view = layoutInflater.inflate(R.layout.row_style, parent, false);
             return new MyViewHolder(view);
-
         }
 
-        // Replace the contents of a view (invoked by the layout manager)
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
 
@@ -185,11 +174,7 @@ public class searchBmi extends AppCompatActivity {
                     mContext.startActivity(intent);
                 }
             });
-
-            // Return the size of your dataset (invoked by the layout manager)
-
         }
-
         @Override
         public int getItemCount() {
             return mDataset.size();
