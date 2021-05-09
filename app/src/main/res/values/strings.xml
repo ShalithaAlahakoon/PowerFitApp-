@@ -22,7 +22,7 @@
     <string name="name1">Name</string>
     <string name="view">View</string>
     <string name="lblIDm0001">M0001</string>
-    <string name="todo1">TODO</string>
+    <string name="todo">TODO</string>
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
     <string name="todo4">TODO</string>
@@ -67,6 +67,10 @@
     <string name="m0006">M0006</string>
     <string name="michale_jackson">Michale Jackson</string>
     <string name="view_details">View Details</string>
+    <string name="male">Male</string>
+    <string name="cardnameHint">Name</string>
+    <string name="cardEmailHint">Email</string>
+    <string name="cardContactHint">Contact</string>
 
 
     <string-array name="Membership_array">

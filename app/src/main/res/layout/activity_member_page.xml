@@ -5,51 +5,25 @@
     android:id="@+id/Members"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#070707"
+    android:background="@color/black"
     android:textAlignment="center"
     tools:context=".MemberPage">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="413dp"
-        android:layout_height="733dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wp2504211"
-        android:contentDescription="@string/todo7" />
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:text="@string/members"
-        android:textColor="#FFF7F7"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="152dp"
-        android:layout_height="128dp"
-        android:text="@string/_53"
-        android:textAlignment="center"
-        android:textColor="#FFF7F7"
-        android:textSize="100sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button5"
@@ -72,269 +46,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.48" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/membersRecycle"
+        android:layout_width="393dp"
+        android:layout_height="653dp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="131dp">
+    </androidx.recyclerview.widget.RecyclerView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:background="#0CE1E8"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/id"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/name"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:background="#FFFFFF"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/lblIDm0001"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/shalitha_alahakoon"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:onClick="MembersDetails"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-        </TableRow>
-        >
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/m0002"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/harry_potter"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/m0003"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/michale_jackson"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/m0004"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/david_peris"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/m0005"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/robinson_cruso"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/name">
-
-            <TextView
-                android:id="@+id/m0002"
-                android:layout_width="32dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:text="@string/m0006"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/michale_jackson"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/btnVd1"
-                android:layout_width="135dp"
-                android:layout_height="34dp"
-                android:layout_weight="0.2"
-                android:backgroundTint="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="@string/view_details"
-                android:textColor="#0B0A0A"
-                android:textSize="12sp" />
-        </TableRow>
-
-    </TableLayout>
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_search"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_search"
+        android:ems="10"
+        android:hint="Search data here..."
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,21 +63,6 @@
         app:layout_constraintVertical_bias="0.164" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#B8B2B2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -172,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="391dp" />
+        app:layout_constraintGuide_end="2dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -182,7 +167,7 @@
         app:layout_constraintGuide_begin="117dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/editTxtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -199,7 +184,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/editTxtContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -208,17 +193,18 @@
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         android:textColorHint="#B8B2B2"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress3"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtName"
         app:layout_constraintVertical_bias="0.487" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/editTxtEmail"
         android:layout_width="258dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="@android:color/holo_blue_bright"
         android:ems="10"
         android:hint="exapmle@example.com"
@@ -227,13 +213,11 @@
         android:textColorHint="#B8B2B2"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editTxtHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -242,14 +226,14 @@
         android:inputType="number"
         android:textColor="#FFFFFF"
         android:textColorHint="#B8B2B2"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber3"
+        app:layout_constraintBottom_toTopOf="@+id/editTextWeight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtEmail" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/editTextWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -276,20 +260,20 @@
         app:layout_constraintTop_toTopOf="@+id/textView17">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"
+            android:text="@string/male"
             android:textColor="#FFFFFF"
             android:textColorHint="#B8B2B2"
-            app:layout_constraintBottom_toBottomOf="@+id/radioButton4"
-            app:layout_constraintEnd_toStartOf="@+id/radioButton4"
+            app:layout_constraintBottom_toBottomOf="@+id/radioButtonFemale"
+            app:layout_constraintEnd_toStartOf="@+id/radioButtonFemale"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/radioButton4" />
+            app:layout_constraintTop_toTopOf="@+id/radioButtonFemale" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButtonFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
@@ -298,7 +282,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/radioButton3"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonMale"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -325,7 +309,7 @@
         app:layout_constraintGuide_begin="20dp" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editTxtPayement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -342,7 +326,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/BtnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_blue_bright"
@@ -353,6 +337,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPayement" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

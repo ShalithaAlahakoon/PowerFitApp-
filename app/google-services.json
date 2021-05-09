@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210227896585",
+    "project_id": "powerfit-1ff1e",
+    "storage_bucket": "powerfit-1ff1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210227896585:android:2371e3d32d5e780c04b3d8",
+        "android_client_info": {
+          "package_name": "com.example.powerfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210227896585-b0v16s2p7j39utdomh3dlq0d4oh5cs1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkVPvmxx0pCEzAvUa7_Aj-7pfZ_6enxvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210227896585-b0v16s2p7j39utdomh3dlq0d4oh5cs1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

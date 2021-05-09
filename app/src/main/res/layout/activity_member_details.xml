@@ -15,173 +15,195 @@
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="54dp">
 
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="394dp"
             android:layout_height="wrap_content"
-            android:text="@string/lblname"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:layout_constraintVertical_bias="0.285" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lblshalitha_alahakoon"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView27"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.561"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView27"
-            app:layout_constraintVertical_bias="0.26" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView34"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lblshalitha97608_gmail_com"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView29"
-            app:layout_constraintStart_toStartOf="@+id/textView33"
-            app:layout_constraintTop_toTopOf="@+id/textView29"
-            app:layout_constraintVertical_bias="0.322" />
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lblname"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lbl_0711594026"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView28"
-            app:layout_constraintStart_toStartOf="@+id/textView34"
-            app:layout_constraintTop_toTopOf="@+id/textView28"
-            app:layout_constraintVertical_bias="0.384" />
+                <TextView
+                    android:id="@+id/detailsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lblshalitha_alahakoon"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lblmale"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView32"
-            app:layout_constraintStart_toStartOf="@+id/textView35"
-            app:layout_constraintTop_toTopOf="@+id/textView32"
-            app:layout_constraintVertical_bias="0.445" />
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lbl_160cm"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView30"
-            app:layout_constraintStart_toStartOf="@+id/textView36"
-            app:layout_constraintTop_toTopOf="@+id/textView30"
-            app:layout_constraintVertical_bias="0.513" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/lblheight"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView32"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.464" />
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/email"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/gender"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView28"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.434" />
+                <TextView
+                    android:id="@+id/detailsEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lblshalitha97608_gmail_com"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/contact"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView29"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.404" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/weight"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView30"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/_74_kg"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView31"
-            app:layout_constraintStart_toStartOf="@+id/textView37"
-            app:layout_constraintTop_toTopOf="@+id/textView31"
-            app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/weight"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/email"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B8B2B2"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView27"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.374" />
+                <TextView
+                    android:id="@+id/detailsWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/_74_kg"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lblheight"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/detailsHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lbl_160cm"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/gender"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/detailsGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/lblmale"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8B2B2"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Payment"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/detailsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="5,000"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView7"
@@ -199,62 +221,55 @@
             android:id="@+id/imageView4"
             android:layout_width="168dp"
             android:layout_height="167dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.1"
-            app:srcCompat="@drawable/shalitha"
-            android:contentDescription="@string/todo" />
+            app:srcCompat="@drawable/shalitha" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.743"
-            app:srcCompat="@drawable/gold"
-            android:contentDescription="@string/todo" />
+            app:srcCompat="@drawable/gold" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_blue_bright"
             android:text="@string/edit_details"
             android:textColor="#0E0E0E"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.856" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_blue_bright"
             android:text="@string/delete_member"
             android:textColor="#0E0E0E"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="@+id/btnEdit"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toTopOf="@+id/button" />
+            app:layout_constraintStart_toEndOf="@+id/btnEdit"
+            app:layout_constraintTop_toTopOf="@+id/btnEdit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="132dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
