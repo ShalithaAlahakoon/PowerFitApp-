@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">powerfit</string>
+    <string name="lbl1">Enter Member ID</string>
+    <string name="lbl2">Select Month</string>
+    <string name="btnSearch">Search</string>
+    <string name="btnAddNewBMI">Add New BMI Details</string>
+    <string name="lbl8">Edit BMI Details</string>
+    <string name="lbl4">Member ID</string>
+    <string name="lbl5">Month</string>
+    <string name="lbl6">Edit Weight</string>
+    <string name="lbl7">Edit Height</string>
+    <string name="btnSaveChanges">Save Changes</string>
+    <string name="lbl9">Add New BMI Details</string>
+    <string name="lbl10">Enter weight</string>
+    <string name="lbl11">Enter Height</string>
+    <string name="btnAdd">Add</string>
+    <string name="lbl12">View BMI Details</string>
+    <string name="lbl13">Member ID</string>
+    <string name="lbl14">Weight</string>
+    <string name="lbl15">Height</string>
+    <string name="lbl16">BMI</string>
+
+
+    <string-array name="names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="title_activity_main24">MainActivity24</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

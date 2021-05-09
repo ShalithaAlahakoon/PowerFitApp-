@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmi_13"
+    tools:context=".searchBmi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/menu_24"
+        app:title="   Search BMI Details" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txtSearch"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:hint="              Enter Member ID"
+
+        android:padding="10dp"></AutoCompleteTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listData"
+        android:layout_width="371dp"
+        android:layout_height="369dp"
+        android:layout_below="@+id/txtSearch"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/search_24" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="75dp"
+        android:text="Enter Member ID"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+
+</RelativeLayout>

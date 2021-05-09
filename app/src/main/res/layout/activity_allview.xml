@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmi_13"
+    tools:context=".allview">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/menu_24"
+        app:title="   All Records" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="208dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="110dp"
+        android:text="All Records"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <ListView
+        android:id="@+id/listData"
+        android:layout_width="351dp"
+        android:layout_height="479dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="195dp"
+        android:textSize="20dp"
+
+        />
+
+</RelativeLayout>
