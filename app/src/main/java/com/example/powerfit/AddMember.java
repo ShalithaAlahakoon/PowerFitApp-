@@ -18,6 +18,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class AddMember extends AppCompatActivity {
 
     EditText Name,Contact,Email,Height,Weight,Amount;
@@ -67,6 +70,9 @@ public class AddMember extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Please Enter Weight ",Toast.LENGTH_SHORT).show();
                     else if(TextUtils.isEmpty(Amount.getText().toString()))
                         Toast.makeText(getApplicationContext(),"Please Enter Amount ",Toast.LENGTH_SHORT).show();
+                    else if(!ValidatePhoneNUmber(Contact.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Valid Mobile ",Toast.LENGTH_SHORT).show();
+                        Contact.setError("Invalid mobile");}
                     else{
 
 
@@ -114,5 +120,11 @@ public class AddMember extends AppCompatActivity {
         Weight.setText("");
         Gender=("");
         Amount.setText("");
+    }
+
+    public boolean ValidatePhoneNUmber(String input){
+        Pattern p = Pattern.compile("[0-9]{10}");
+        Matcher m = p.matcher(input);
+        return m.matches();
     }
 }

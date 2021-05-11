@@ -173,7 +173,7 @@
         android:backgroundTint="@android:color/holo_blue_bright"
         android:ems="10"
         android:hint="Full name"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#B8B2B2"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
@@ -190,7 +190,7 @@
         android:backgroundTint="@android:color/holo_blue_bright"
         android:ems="10"
         android:hint="xxxxxxxxxx"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:textColor="#FFFFFF"
         android:textColorHint="#B8B2B2"
         app:layout_constraintBottom_toTopOf="@+id/editTxtEmail"
@@ -338,5 +338,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtPayement" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
