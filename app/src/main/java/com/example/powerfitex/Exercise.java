@@ -57,9 +57,6 @@ public class Exercise {
     public void setDetails(String details) {
         this.details = details;
     }
-
-    public String allExercices(){
-        return this.exID + "\n" + "Name : " + exName + "\n" + "Body Part : " + bodyPart;
-    }
+    
 
 }

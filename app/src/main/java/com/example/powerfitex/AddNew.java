@@ -60,6 +60,10 @@ public class AddNew extends AppCompatActivity {
 
                     dbRef.push().setValue(Exr);
 
+                    Intent intent = new Intent(this, HomeExercise.class);
+                    startActivity(intent);
+
+
                     Toast.makeText(getApplicationContext(), "Successfully Inserted", Toast.LENGTH_SHORT).show();
                     clearControls();
                 }

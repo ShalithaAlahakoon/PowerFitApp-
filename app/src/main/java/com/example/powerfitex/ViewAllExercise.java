@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -21,7 +22,7 @@ public class ViewAllExercise extends AppCompatActivity {
 
     TextView txtViewNameE,txtViewNameE1, txtViewIdE, txtViewBPE, txtViewEQE, txtViewDetailsE;
     Button btnUpdateE , btnDeleteE;
-    DatabaseReference dbRef;
+    DatabaseReference dbRef,Dataref;
 
 
     @Override
@@ -35,11 +36,12 @@ public class ViewAllExercise extends AppCompatActivity {
         txtViewBPE = findViewById(R.id.viewExBodyPart);
         txtViewEQE = findViewById(R.id.viewExEq);
         txtViewDetailsE = findViewById(R.id.viewExDetails);
+        btnDeleteE = findViewById(R.id.btnDeleteEx);
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Exercise");
 
         String ExerciseKey = getIntent().getStringExtra("ExerciseKey");
-
+        Dataref = FirebaseDatabase.getInstance().getReference().child("Exercise").child(ExerciseKey);
 
         dbRef.child(ExerciseKey).addValueEventListener(new ValueEventListener() {
             @Override
@@ -64,7 +66,19 @@ public class ViewAllExercise extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
 
+        btnDeleteE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dataref.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(ViewAllExercise.this, "Successfully Deleted", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(),HomeExercise.class));
+                    }
+                });
             }
         });
 

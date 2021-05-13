@@ -19,22 +19,30 @@
         android:drawableRight="@drawable/ic_search"
         android:paddingRight="10dp">
     </EditText>
-    
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/inputSearch"
+        android:id="@+id/recylerViewEx"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recylerViewEx"/>
+        android:layout_below="@+id/inputSearch"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/background_3" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtnAddEx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/floatingbtnAddEx"
-        android:backgroundTint="@color/light_blue"
-        android:background="@color/light_blue"
-        android:src="@drawable/ic_add_ex"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="25dp"/>
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/light_blue"
+        android:onClick="onClick"
+        android:src="@drawable/ic_add_ex" />
 
 </RelativeLayout>

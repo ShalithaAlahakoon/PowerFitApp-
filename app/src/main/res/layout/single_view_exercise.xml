@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/light_blue"
-    android:layout_marginBottom="8dp">
+    android:background="#6D7171"
+    android:layout_marginBottom="8dp"
+    >
 
     <TextView
         android:id="@+id/textView_single_ex_name"
@@ -14,17 +15,16 @@
         android:gravity="center"
         android:text="Name"
         android:textColor="@color/white"
-        android:textSize="25sp"
-         />
+        android:textSize="25sp" />
 
     <TextView
         android:layout_width="10dp"
         android:layout_height="wrap_content"
-        android:text="-"
         android:layout_marginLeft="260dp"
+        android:text="-"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 
     <TextView

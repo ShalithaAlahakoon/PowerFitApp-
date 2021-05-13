@@ -8,7 +8,7 @@
     <string name="txtEquipment">Equipment</string>
     <string name="txtDetails">Details</string>
     <string name="editTxrID">Type here</string>
-    <string name="AddNew">Add new</string>
+    <string name="AddNew">Add Exercise</string>
     <string name="editTextName">Type here</string>
     <string name="editTxtDetails">Type here</string>
     <string name="btnSave">Save</string>
@@ -43,5 +43,7 @@
         <item>Leg curl</item>
         <item>Barbell</item>
         <item>Bench</item>
+        <item>Carpet</item>
+        <item>Pushdown</item>
     </string-array>
 </resources>
