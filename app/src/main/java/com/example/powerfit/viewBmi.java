@@ -13,12 +13,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 public class viewBmi extends AppCompatActivity {
 
@@ -27,10 +30,10 @@ public class viewBmi extends AppCompatActivity {
     private EditText txtweight;
     private EditText txtheight;
     private TextView txtbmi;
-    private Button btndelete;
+    private Button btndelete , btnupdate;
 
 
-    DatabaseReference ref , deleteref;
+    DatabaseReference ref , deleteref , up;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,7 @@ public class viewBmi extends AppCompatActivity {
         txtheight = (EditText) findViewById(R.id.editheight);
         txtbmi = (TextView) findViewById(R.id.editbmi1);
         btndelete = (Button) findViewById(R.id.btndelete);
+        btnupdate = (Button) findViewById(R.id.btnupdate);
 
         Intent intent = getIntent();
         String key = intent.getStringExtra("key");
@@ -79,7 +83,7 @@ public class viewBmi extends AppCompatActivity {
                 deleteUser(key);
             }
         });
-
+        
     }
 
     private void deleteUser(String key) {
@@ -90,5 +94,6 @@ public class viewBmi extends AppCompatActivity {
         Intent i3 = new Intent(this, com.example.powerfit.MainActivity.class);
         startActivity(i3);
     }
+
 
 }

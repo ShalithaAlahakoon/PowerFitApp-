@@ -37,6 +37,7 @@ public class searchBmi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_bmi);
 
+        //CONNECT FIREBASE
         ref = FirebaseDatabase.getInstance("https://powerfit-e3cf8-default-rtdb.firebaseio.com/").getReference().child("BmiDetails");
         txtSearch = (AutoCompleteTextView) findViewById(R.id.txtSearch);
         listdata = (RecyclerView) findViewById(R.id.listData);
@@ -55,9 +56,8 @@ public class searchBmi extends AppCompatActivity {
                     ArrayList<String> names = new ArrayList<>();
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         String n = ds.child("memberId").getValue(String.class);
-                        String m = ds.child("month").getValue(String.class);
                         names.add(n);
-                        names.add(m);
+
                     }
                     ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, names);
                     txtSearch.setAdapter(adapter);

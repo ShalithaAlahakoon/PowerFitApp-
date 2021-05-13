@@ -22,17 +22,17 @@
 
 
     <string-array name="names">
-        <item>January</item>
-        <item>February</item>
-        <item>March</item>
-        <item>April</item>
-        <item>May</item>
-        <item>June</item>
-        <item>July</item>
-        <item>August</item>
-        <item>September</item>
-        <item>November</item>
-        <item>December</item>
+        <item>2021-January</item>
+        <item>2021-February</item>
+        <item>2021-March</item>
+        <item>2021-April</item>
+        <item>2021-May</item>
+        <item>2021-June</item>
+        <item>2021-July</item>
+        <item>2021-August</item>
+        <item>2021-September</item>
+        <item>2021-November</item>
+        <item>2021-December</item>
     </string-array>
     <string name="title_activity_main24">MainActivity24</string>
     <!-- Strings used for fragments for navigation -->

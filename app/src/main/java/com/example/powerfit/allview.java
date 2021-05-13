@@ -37,41 +37,45 @@ public class allview extends AppCompatActivity {
         setContentView(R.layout.activity_allview);
 
 
+        listdata = (ListView) findViewById(R.id.listData);
 
-                listdata= (ListView) findViewById(R.id.listData);
-                dbRead = FirebaseDatabase.getInstance("https://powerfit-e3cf8-default-rtdb.firebaseio.com/").getReference().child("BmiDetails");
+        //CONNECT FIREBASE
+        dbRead = FirebaseDatabase.getInstance("https://powerfit-e3cf8-default-rtdb.firebaseio.com/").getReference().child("BmiDetails");
 
-                ValueEventListener event = new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        readData(dataSnapshot);
-                    }
+        ValueEventListener event = new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                readData(dataSnapshot);
+            }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                    }
-                };
-                dbRead.addListenerForSingleValueEvent(event);
+            }
+        };
+        dbRead.addListenerForSingleValueEvent(event);
 
     }
 
     private void readData(DataSnapshot dataSnapshot) {
-        if(dataSnapshot.exists())
-        {
+        if (dataSnapshot.exists()) {
             ArrayList<String> listusers = new ArrayList<>();
-            for (DataSnapshot ds:dataSnapshot.getChildren())
-            {
-                BmiDetails btnew = new BmiDetails(ds.child("memberId").getValue().toString(),ds.child("month").getValue().toString(),ds.child("weight").getValue(float.class),ds.child("height").getValue(float.class),ds.child("bmi").getValue(float.class));
-                listusers.add("\nMember Id : "+btnew.getMemberId()+"\nMonth : "+btnew.getMonth()+"\nWeight : "+btnew.getWeight() +" Kg"+"\nHeight : "+btnew.getHeight() +" M"+"\nBMI Value : "+btnew.getBmi()+"\n");
+            for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                BmiDetails btnew = new BmiDetails(ds.child("memberId").getValue().toString(), ds.child("month").getValue().toString(), ds.child("weight").getValue(float.class), ds.child("height").getValue(float.class), ds.child("bmi").getValue(float.class));
+                listusers.add("\nMember Id : " + btnew.getMemberId() + "\nMonth : " + btnew.getMonth() + "\nWeight : " + btnew.getWeight() + " Kg" + "\nHeight : " + btnew.getHeight() + " CM" + "\nBMI Value : " + btnew.getBmi() + "\n");
             }
 
-            ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,listusers);
+            ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listusers);
             listdata.setAdapter(arrayAdapter);
 
-        }else {
-            Log.d("BmiDetails" , "no data available");
+        } else {
+            Log.d("BmiDetails", "no data available");
         }
     }
 
+    public void back(View view) {
+        Intent i31 = new Intent(this, com.example.powerfit.MainActivity.class);
+        startActivity(i31);
+
+    }
 }

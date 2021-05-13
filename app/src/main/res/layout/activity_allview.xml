@@ -25,18 +25,31 @@
         android:layout_height="83dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="110dp"
+        android:textStyle="bold"
         android:text="All Records"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp" />
 
     <ListView
         android:id="@+id/listData"
-        android:layout_width="351dp"
-        android:layout_height="479dp"
+        android:layout_width="353dp"
+        android:layout_height="400dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="195dp"
         android:textSize="20dp"
+        android:textStyle="bold"
 
         />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="650dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:onClick="back"
+        android:text="BACK"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class addBmi extends AppCompatActivity {
 
-    public static final String EXTRA_Message = "com.example.powerfit";
+
 
 
     EditText Weight, Height, MemId;
@@ -27,6 +27,7 @@ public class addBmi extends AppCompatActivity {
     DatabaseReference dbRef;
     BmiDetails btd;
     Spinner Month;
+    float wei, hei , bmi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,21 +45,18 @@ public class addBmi extends AppCompatActivity {
         Month = findViewById(R.id.spinner2);
         Weight = findViewById(R.id.weight);
         Height = findViewById(R.id.height);
-
-
-        float wei, hei;
-        wei = Float.parseFloat(Weight.getText().toString());
-        hei = Float.parseFloat(Height.getText().toString());
-
-        float bmi = wei / (hei * hei);
-
         btnadd = findViewById(R.id.buttonadd);
+
 
         btd = new BmiDetails();
 
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+
+                //CONNECT FIREBASE
                 dbRef = FirebaseDatabase.getInstance("https://powerfit-e3cf8-default-rtdb.firebaseio.com/").getReference().child("BmiDetails");
                 try {
                     if (TextUtils.isEmpty(MemId.getText().toString()))
@@ -70,13 +68,22 @@ public class addBmi extends AppCompatActivity {
                     else if (TextUtils.isEmpty(Height.getText().toString()))
                         Toast.makeText(getApplicationContext(), "please enter height", Toast.LENGTH_SHORT).show();
                     else {
+                                //SET VALUES
                                 btd.setMemberId(MemId.getText().toString().trim());
                                 btd.setMonth(Month.getSelectedItem().toString().trim());
                                 btd.setWeight(Float.parseFloat(Weight.getText().toString().trim()));
                                 btd.setHeight(Float.parseFloat(Height.getText().toString().trim()));
-                                btd.setBmi(bmi);
+
+                                wei = Float.parseFloat(Weight.getText().toString());
+                                hei = Float.parseFloat(Height.getText().toString());
+
+                                //CALCULATE BMI VALUE
+                                bmi = wei / ((hei/100) * (hei/100));
+
+                                btd.setBmi(Float.valueOf(bmi));
 
                                 dbRef.push().setValue(btd);
+
                                 Toast.makeText(getApplicationContext(), "Insert successful", Toast.LENGTH_SHORT).show();
                                 clearControls();
 
