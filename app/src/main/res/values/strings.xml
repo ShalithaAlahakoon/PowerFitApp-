@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">schedule_management</string>
+    <string name="txtID">Schedule ID</string>
+    <string name="txtDate">Date</string>
+    <string name="txtTime">Time</string>
+    <string name="txtDescription">Description...</string>
+
+    <string-array name="time_durations">
+        <item>--select time period--</item>
+        <item>08.00 am - 10.00 am</item>
+        <item>10.00 am - 12.00 am</item>
+        <item>03.00 am - 05.00 am</item>
+        <item>05.00 am - 06.00 am</item>
+        <item>06.00 am - 08.00 am</item>
+    </string-array>
+</resources>
